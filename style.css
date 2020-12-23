@@ -180,10 +180,10 @@ form p {
 
 #section2 div {
   position: absolute;
-  top: 1050px;
+  top: 1000px;
   z-index: 2;
   left: 15vw;
-  font-size: 70px;
+  font-size: 60px;
   color: white;
   font-weight: bold;
 }
@@ -194,7 +194,7 @@ form p {
 
 #section2 p {
   position: absolute;
-  top: 1150px;
+  top: 1100px;
   z-index: 2;
   left: 15vw;
   font-size: 40px;
@@ -203,9 +203,9 @@ form p {
 
 #section2 button {
   position: absolute;
-  top: 1050px;
+  top: 1000px;
   z-index: 2;
-  left: 74vw;
+  left: 70vw;
   font-size: 22px;
   background-color: #ffd500;
   width: 200px;
@@ -217,7 +217,7 @@ form p {
   position: absolute;
   top: 100rem;
   left: 10vw;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
   line-height: 60px;
 }
