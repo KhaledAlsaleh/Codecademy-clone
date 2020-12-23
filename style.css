@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto;
+  padding: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+#logo {
+  width: 10rem;
+  height: 2rem;
+}
+
+#nav {
+  display: flex;
+  margin-top: 10px;
+  list-style: none;
+  margin-right: 350px;
+}
+
+.mainNav {
+  margin: 0 2rem;
+}
+
+.childNav {
+  list-style: none;
+  line-height: 2rem;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+#login {
+  text-decoration: none;
+  margin: 10px 0 0 50px;
+  width: 70px;
+  height: 30px;
+  color: #6400e4;
+  font-weight: bold;
+}
+
+#login:hover {
+  cursor: pointer;
+}
+
+header nav ul {
+  font-weight: bold;
+}
+
+header nav ul ul {
+  display: none;
+  font-weight: bold;
+}
+
+header nav ul li:hover {
+  cursor: pointer;
+  color: #6400e4;
+}
+
+header nav ul li:hover > ul {
+  display: list-item;
+  cursor: pointer;
+  color: black;
+  transition-delay: 2s;
+}
+
+header nav ul li ul li:hover {
+  color: #6400e4;
+}
+
+#section1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+main #section1 img {
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+#image1 {
+  margin: 0;
+}
+
+#image2 {
+  top: 200px;
+  left: 100px;
+  z-index: 2;
+}
+
+#image3 {
+  left: 260px;
+}
+
+#image4 {
+  top: 150px;
+  z-index: 1;
+}
+
+#image5 {
+  z-index: 2;
+  top: 430px;
+}
+
+#section1 div > div {
+  width: 450px;
+  height: fit-content;
+  font-weight: bold;
+  background-color: #6400e4;
+  color: white;
+  font-size: 44px;
+  position: absolute;
+  z-index: 3;
+  padding: 20px;
+  top: 380px;
+  left: 40px;
+}
+
+form {
+  right: 120px;
+  margin: 20px;
+  padding: 20px;
+  position: absolute;
+}
+
+form h2 {
+  margin-bottom: 50px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input {
+  margin: 20px 0;
+  width: 400px;
+  height: 50px;
+}
+
+form button {
+  width: 400px;
+  height: 50px;
+  background-color: #6400e4;
+  color: white;
+  font-size: 20px;
+}
+
+form p {
+  width: 400px;
+  margin-top: 10px;
+  line-height: 30px;
+}
+
+#image6 {
+  position: absolute;
+  top: 500px;
+  width: 100%;
+  height: 150vh;
+}
+
+#image7 {
+  position: absolute;
+  top: 950px;
+  left: 10vw;
+  width: 80%;
+  z-index: 1;
+}
+
+#section2 div {
+  position: absolute;
+  top: 1050px;
+  z-index: 2;
+  left: 15vw;
+  font-size: 70px;
+  color: white;
+  font-weight: bold;
+}
+
+#section2 div span {
+  color: #ffd500;
+}
+
+#section2 p {
+  position: absolute;
+  top: 1150px;
+  z-index: 2;
+  left: 15vw;
+  font-size: 40px;
+  color: white;
+}
+
+#section2 button {
+  position: absolute;
+  top: 1050px;
+  z-index: 2;
+  left: 74vw;
+  font-size: 22px;
+  background-color: #ffd500;
+  width: 200px;
+  height: 80px;
+  border-radius: 30%;
+}
+
+#section3 div {
+  position: absolute;
+  top: 100rem;
+  left: 10vw;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 60px;
+}
