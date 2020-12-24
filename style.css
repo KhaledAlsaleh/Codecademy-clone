@@ -10,12 +10,17 @@ body {
   height: 100vh;
 }
 
+/* Hrader & Nav & Logo*/
+
 header {
+  position: fixed;
+  z-index: 10;
+  background-color: white;
   display: flex;
+  padding: 30px;
   justify-content: space-around;
-  margin: 10px auto;
-  padding: 10px;
   border-bottom: 2px solid #eee;
+  width: 100vw;
 }
 
 #logo {
@@ -23,22 +28,26 @@ header {
   height: 2rem;
 }
 
+#logo:hover {
+  cursor: pointer;
+}
+
 #nav {
   display: flex;
   margin-top: 10px;
   list-style: none;
-  margin-right: 350px;
+  margin-right: 20rem;
 }
 
 .mainNav {
-  margin: 0 2rem;
+  margin: 0 1rem;
 }
 
 .childNav {
   list-style: none;
   line-height: 2rem;
-  margin: 10px 0;
-  padding: 10px 0;
+  padding: 10px;
+  border: 1px solid black;
 }
 
 #login {
@@ -72,60 +81,81 @@ header nav ul li:hover > ul {
   display: list-item;
   cursor: pointer;
   color: black;
-  transition-delay: 2s;
+  position: absolute;
+  z-index: 5;
+  background-color: white;
+  margin-top: 10px;
 }
 
 header nav ul li ul li:hover {
   color: #6400e4;
 }
 
+/* Section 1 */
+
 #section1 {
+  padding-top: 100px;
   display: flex;
   justify-content: space-between;
 }
 
-main #section1 img {
-  position: absolute;
-  margin-left: 100px;
-  margin-top: 40px;
+#leftDiv {
+  display: flex;
+  width: 60%;
+  margin-left: 30px;
+}
+
+#rightDiv {
+  width: 40%;
+  display: flex;
 }
 
 #image1 {
-  margin: 0;
+  width: 10%;
+  height: 3%;
+  margin: 4% 0 0 50px;
 }
 
 #image2 {
-  top: 200px;
-  left: 100px;
+  width: 25%;
+  height: 10%;
+  margin-top: 24%;
   z-index: 2;
 }
 
 #image3 {
-  left: 260px;
+  width: 30%;
+  height: 20%;
+  margin-top: 4%;
+  margin-right: -5%;
 }
 
 #image4 {
-  top: 150px;
+  width: 80%;
+  height: 80%;
+  margin: 11% 0 0 -60%;
   z-index: 1;
 }
 
 #image5 {
+  width: 50%;
+  height: 50%;
   z-index: 2;
-  top: 430px;
+  margin-left: -50%;
+  margin-top: 45%;
 }
 
-#section1 div > div {
-  width: 450px;
+#leftDiv > div {
+  width: 52%;
   height: fit-content;
   font-weight: bold;
   background-color: #6400e4;
   color: white;
-  font-size: 44px;
-  position: absolute;
+  font-size: 2.5rem;
   z-index: 3;
   padding: 20px;
-  top: 380px;
-  left: 40px;
+  margin-top: 40%;
+  margin-left: -85%;
 }
 
 form {
@@ -163,61 +193,158 @@ form p {
   line-height: 30px;
 }
 
-#image6 {
-  position: absolute;
-  top: 500px;
-  width: 100%;
-  height: 150vh;
+#section2 {
+  display: flex;
 }
 
-#image7 {
-  position: absolute;
-  top: 950px;
-  left: 10vw;
-  width: 80%;
+#image6 {
+  width: 100%;
+  margin-top: -20%;
   z-index: 1;
 }
 
-#section2 div {
-  position: absolute;
-  top: 1000px;
+#image7 {
+  width: 70%;
   z-index: 2;
-  left: 15vw;
-  font-size: 60px;
+  margin-top: 50px;
+  margin-left: -85vw;
+}
+
+#section2 div {
+  z-index: 2;
+  font-size: 50px;
   color: white;
   font-weight: bold;
+  margin-left: -67vw;
+  margin-top: 80px;
 }
 
 #section2 div span {
   color: #ffd500;
-}
-
-#section2 p {
-  position: absolute;
-  top: 1100px;
   z-index: 2;
-  left: 15vw;
-  font-size: 40px;
+  margin-top: s;
+}
+#section2 p {
+  z-index: 2;
+  font-size: 36px;
   color: white;
+  margin-left: -44vw;
+  margin-top: 150px;
 }
 
 #section2 button {
-  position: absolute;
-  top: 1000px;
   z-index: 2;
-  left: 70vw;
   font-size: 22px;
   background-color: #ffd500;
   width: 200px;
   height: 80px;
   border-radius: 30%;
+  margin-left: -15vw;
+  margin-top: 65px;
+}
+
+#section2 button:hover {
+  cursor: pointer;
+}
+
+#section3 {
+  padding-top: 50px;
+  background-color: #f0f3ff;
 }
 
 #section3 div {
-  position: absolute;
-  top: 100rem;
-  left: 10vw;
+  text-align: center;
+  color: #141c3a;
   font-size: 40px;
   font-weight: bold;
   line-height: 60px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+#section4 {
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 100px;
+  background-color: #f0f3ff;
+}
+
+#section4 > div {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10%;
+}
+
+#section4 div span {
+  width: 80px;
+  height: 80px;
+  border: 10px solid #eff2ff;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 8%;
+  font-size: 50px;
+}
+
+#section4 div img {
+  width: 30%;
+  margin-left: 10%;
+}
+
+#section4 div div {
+  width: 40%;
+  color: #141c3a;
+  font-size: 20px;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+#section4 div div h3 {
+  margin: 20px;
+}
+
+#section4 div div p {
+  margin: 20px;
+  line-height: 30px;
+}
+
+#section5 img {
+  display: flex;
+}
+
+#section5 {
+  background-color: #141c3a;
+  height: 1200px;
+}
+
+#backGround {
+  width: 100%;
+}
+
+#points {
+  margin-top: -34%;
+  margin-left: 2%;
+}
+
+#rects {
+  margin-left: 85vw;
+  margin-top: -10%;
+}
+
+#section5 div {
+  padding-top: 400px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+}
+
+#section5 p {
+  text-align: center;
+  padding: 50px;
+  color: white;
+  font-size: 30px;
 }
