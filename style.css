@@ -237,10 +237,11 @@ form p {
   font-size: 22px;
   background-color: #ffd500;
   width: 200px;
-  height: 80px;
-  border-radius: 30%;
+  height: 50px;
+  border: 1px solid #ffd500;
+  border-radius: 3.125rem;
   margin-left: -15vw;
-  margin-top: 65px;
+  margin-top: 85px;
 }
 
 #section2 button:hover {
@@ -316,7 +317,7 @@ form p {
 
 #section5 {
   background-color: #141c3a;
-  height: 1200px;
+  height: fit-content;
 }
 
 #backGround {
@@ -333,8 +334,8 @@ form p {
   margin-top: -10%;
 }
 
-#section5 div {
-  padding-top: 400px;
+#whyToLearn {
+  padding-top: 0px;
   text-align: center;
   line-height: 70px;
   font-size: 60px;
@@ -342,9 +343,257 @@ form p {
   color: white;
 }
 
-#section5 p {
+#whySpan {
+  color: #64edbe;
+}
+
+#whatSpan {
+  color: #ffd500;
+}
+
+#whatToLearn {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+}
+
+#webDevelopment {
+  width: 31%;
+}
+
+#computerScience {
+  width: 31%;
+}
+
+#dataScience {
+  width: 31%;
+}
+
+#whatToLearn h3 {
+  text-align: center;
+  color: white;
+  border-bottom: 3px solid white;
+  padding: 20px;
+  font-size: 30px;
+}
+
+#computerScience h3 {
+  margin-top: -34px;
+}
+
+#whatToLearn ul {
+  margin: 20px;
+  color: white;
+  display: flex;
+  list-style: none;
+}
+
+#whatToLearn ul li {
+  margin: 0 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#whatToLearn ul li::before {
+  content: "\2022";
+  color: #ffd500;
+  font-weight: bolder;
+  font-size: 35px;
+  display: inline-block;
+  width: 20px;
+  margin-left: -60px;
+}
+
+#computerScience ul li::before {
+  color: #6aebc0;
+}
+
+#dataScience ul li::before {
+  color: #6400e4;
+}
+
+#whatToLearn p {
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+  color: white;
+  line-height: 35px;
+}
+
+#section6 {
+  background-color: #6400e4;
+  height: fit-content;
+  padding: 50px 0;
+}
+
+#section6 img {
+  display: flex;
+}
+
+#firstImage {
+  margin-left: 80vw;
+  margin-top: -50px;
+}
+
+#secondImage {
+  margin-left: -7vw;
+  margin-top: -50px;
+  width: 35%;
+}
+
+#thirdImage {
+  margin-left: 85vw;
+}
+
+#timeToStart {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+#timeToStart div {
   text-align: center;
   padding: 50px;
+  margin-top: -500px;
   color: white;
-  font-size: 30px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#timeToStart p {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  z-index: 2;
+}
+
+#timeToStart button {
+  width: 300px;
+  height: 50px;
+  margin: 50px auto;
+  font-size: 22px;
+  color: white;
+  background-color: #6400e4;
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 3.125rem;
+}
+
+#timeToStart button:hover {
+  color: black;
+  background-color: white;
+}
+
+footer {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  height: fit-content;
+  padding: 20px 40px;
+}
+
+#topFooter {
+  display: flex;
+  justify-content: space-around;
+}
+
+#leftFooter {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+}
+
+#leftFooter div {
+  width: 32%;
+  padding: 20px;
+}
+
+#betweenFooterParts1 {
+  border-left: 1px solid black;
+}
+
+#betweenFooterParts2 {
+  margin: 30px 0;
+  border-top: 1px solid black;
+}
+
+#rightFooter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 45%;
+  padding: 20px;
+}
+
+#topFooter h5 {
+  padding-bottom: 15px;
+}
+
+#topFooter p {
+  line-height: 30px;
+}
+
+#topFooter p:hover {
+  color: #6400e4;
+  cursor: pointer;
+}
+
+#rightFooterContent {
+  display: flex;
+  padding: 0 20px;
+}
+
+#leftContent {
+  width: 50%;
+}
+
+#rightContent {
+  width: 50%;
+}
+
+#languagesItems {
+  display: flex;
+}
+
+#leftLanguageItems {
+  width: 50%;
+}
+
+#rightLanguageItems {
+  width: 50%;
+  padding-left: 50px;
+}
+
+#bottomFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+#bottomFooterLeftSide {
+  display: flex;
+  width: 70%;
+}
+
+#bottomFooterLeftSide p {
+  padding-left: 10px;
+}
+
+#bottomFooterLeftSide p:not(:last-child)::after {
+  content: "|";
+  padding-left: 10px;
+}
+
+#bottomFooterLeftSide p:hover {
+  cursor: pointer;
+  color: #6400e4;
+}
+
+#bottomFooterRightSide {
+  display: flex;
+  width: 25%;
+}
+
+#bottomFooterRightSide div {
+  align-self: flex-end;
 }
