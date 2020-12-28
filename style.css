@@ -228,7 +228,7 @@ form p {
   z-index: 2;
   font-size: 36px;
   color: white;
-  margin-left: -44vw;
+  margin-left: -39.5vw;
   margin-top: 150px;
 }
 
@@ -240,7 +240,7 @@ form p {
   height: 50px;
   border: 1px solid #ffd500;
   border-radius: 3.125rem;
-  margin-left: -15vw;
+  margin-left: -10vw;
   margin-top: 85px;
 }
 
@@ -596,4 +596,125 @@ footer {
 
 #bottomFooterRightSide div {
   align-self: flex-end;
+}
+
+/*  Media Queries  */
+
+/*  Smaller Smartphones  */
+
+@media (max-width: 480px) {
+  header {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -20px;
+  }
+  #nav {
+    display: none;
+  }
+
+  #image1,
+  #image2,
+  #image3,
+  #image4,
+  #image5 {
+    display: none;
+  }
+
+  #section1 {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+    margin: 20px;
+    align-content: space-around;
+  }
+
+  #leftDiv {
+    display: flex;
+    margin-left: 0px;
+    width: 120%;
+    margin: 20px auto;
+    padding-left: 40px;
+  }
+
+  #rightDiv {
+    display: flex;
+    width: 0;
+  }
+
+  #section1 #leftDiv > div {
+    width: 300px;
+    height: fit-content;
+    font-weight: bolder;
+    color: black;
+    background-color: white;
+    font-size: 22px;
+    z-index: 3;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  form {
+    right: 0px;
+    position: relative;
+  }
+
+  form h2 {
+    display: none;
+  }
+
+  #section2 {
+    display: flex;
+    width: 100%;
+  }
+
+  #image6 {
+    width: 140vw;
+    margin-top: -150px;
+    height: 140vh;
+    z-index: 1;
+  }
+
+  #image7 {
+    visibility: hidden;
+  }
+
+  #section2 div {
+    padding: 50px;
+    width: 100%;
+    z-index: 2;
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+    margin-left: -100vw;
+    margin-top: 80px;
+    background-color: #6400e4;
+  }
+
+  #section2 div span {
+    color: #ffd500;
+    z-index: 2;
+    margin-top: s;
+  }
+  #section2 p {
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    font-size: 30px;
+    color: white;
+    margin-left: -80vw;
+    margin-top: 600px;
+  }
+
+  #section2 button {
+    z-index: 2;
+    font-size: 22px;
+    background-color: #ffd500;
+    width: 400px;
+    height: 50px;
+    border: 1px solid #ffd500;
+    border-radius: 3.125rem;
+    margin-left: -210px;
+    margin-top: 105vh;
+  }
 }
