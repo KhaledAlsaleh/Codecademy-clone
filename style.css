@@ -228,7 +228,7 @@ form p {
   z-index: 2;
   font-size: 36px;
   color: white;
-  margin-left: -39.5vw;
+  margin-left: -44vw;
   margin-top: 150px;
 }
 
@@ -240,7 +240,7 @@ form p {
   height: 50px;
   border: 1px solid #ffd500;
   border-radius: 3.125rem;
-  margin-left: -10vw;
+  margin-left: -15vw;
   margin-top: 85px;
 }
 
@@ -600,7 +600,7 @@ footer {
 
 /*  Media Queries  */
 
-/*  Smaller Smartphones [iPhone X] */
+/*  Smaller Smartphones (iPhone X on Browser) */
 
 @media (max-width: 480px) {
   header {
@@ -943,5 +943,178 @@ footer {
     text-align: center;
     width: 120vw;
     padding: 15px;
+  }
+}
+
+/*  Tablets & Larger Smartphones (iPad On Browser) */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0px;
+  }
+  #nav {
+    display: none;
+  }
+  #section1 {
+    margin-bottom: 100px;
+  }
+  #leftDiv {
+    width: 60%;
+    margin-left: 0px;
+  }
+
+  #rightDiv {
+    width: 25%;
+  }
+
+  #image1 {
+    width: 15%;
+    height: 5%;
+    margin: 4% 0 0 50px;
+  }
+
+  #leftDiv > div {
+    width: 54%;
+    font-size: 1.5rem;
+    margin-top: 50%;
+  }
+
+  form {
+    position: relative;
+  }
+
+  #section2 {
+    display: flex;
+  }
+
+  #image6 {
+    width: 120%;
+  }
+
+  #image7 {
+    width: 100%;
+    margin-top: 150px;
+    margin-left: -110vw;
+  }
+
+  #section2 div {
+    margin-left: -95vw;
+    margin-top: 160px;
+  }
+
+  #section2 p {
+    display: none;
+  }
+
+  #section2 button {
+    margin-top: 225px;
+  }
+
+  #section3 {
+    padding-top: 20px;
+    background-color: #f0f3ff;
+    width: 120%;
+    margin-top: -10px;
+  }
+
+  #section3 div {
+    padding: 40px;
+  }
+
+  #section4 {
+    width: 120%;
+    margin-top: -70px;
+  }
+
+  #section4 div div {
+    margin-top: 0;
+  }
+
+  #section5 {
+    width: 120%;
+  }
+
+  #points {
+    margin-top: -33%;
+    margin-left: 3%;
+  }
+
+  #rects {
+    margin-left: 100vw;
+    margin-top: -15%;
+  }
+
+  #whatToLearn {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+  }
+
+  #whatToLearn > div {
+    width: 40%;
+    padding: 10px;
+  }
+  #whatToLearn h3 {
+    font-size: 30px;
+  }
+
+  #whatToLearn div li {
+    font-size: 14px;
+  }
+  #dataScience h3 {
+    margin-top: 0px;
+  }
+
+  #computerScience h3 {
+    margin-top: -68px;
+  }
+
+  #section6 {
+    width: 120%;
+    padding-bottom: 100px;
+  }
+
+  #section6 img {
+    display: flex;
+  }
+
+  #firstImage {
+    margin-left: 90vw;
+    margin-top: -50px;
+  }
+
+  #thirdImage {
+    margin-left: 95vw;
+  }
+
+  #timeToStart div {
+    margin-top: -350px;
+    font-size: 40px;
+  }
+
+  #timeToStart p {
+    font-size: 17px;
+  }
+
+  footer {
+    width: 120%;
+  }
+
+  #bottomFooterLeftSide {
+    width: 70%;
+  }
+
+  #bottomFooterLeftSide p {
+    font-size: 13px;
+  }
+
+  #bottomFooterRightSide {
+    width: 30%;
+  }
+
+  #bottomFooterRightSide div {
+    font-size: 13px;
   }
 }
