@@ -600,7 +600,7 @@ footer {
 
 /*  Media Queries  */
 
-/*  Smaller Smartphones  */
+/*  Smaller Smartphones [iPhone X] */
 
 @media (max-width: 480px) {
   header {
@@ -670,7 +670,7 @@ footer {
 
   #image6 {
     width: 140vw;
-    margin-top: -150px;
+    margin-top: -140px;
     height: 140vh;
     z-index: 1;
   }
@@ -716,5 +716,232 @@ footer {
     border-radius: 3.125rem;
     margin-left: -210px;
     margin-top: 105vh;
+  }
+
+  #section3 {
+    width: 140vw;
+    margin-top: -10px;
+  }
+
+  #section3 div {
+    font-size: 36px;
+  }
+
+  #section4 {
+    margin: -30px auto;
+    width: 140vw;
+  }
+
+  #section4 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 10%;
+  }
+
+  #section4 div span {
+    margin: 0 auto;
+  }
+
+  #section4 div img {
+    width: 100%;
+    margin: 20% auto;
+  }
+
+  #section4 div div {
+    margin: 0 auto;
+    width: 100%;
+    color: #141c3a;
+    font-size: 20px;
+    margin-top: 2%;
+  }
+
+  #section4 div div h3 {
+    width: 60%;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  #section4 div div p {
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  #section5 {
+    width: 140vw;
+    padding-bottom: 50px;
+  }
+
+  #backGround {
+    width: 100%;
+  }
+
+  #points {
+    margin-top: -30%;
+    margin-left: 4%;
+  }
+
+  #rects {
+    margin-left: 90vw;
+    margin-top: -30%;
+  }
+
+  #whyToLearn {
+    font-size: 50px;
+    padding: 80px 10px 0 10px;
+  }
+
+  #whatToLearn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  #webDevelopment {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  #computerScience {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  #dataScience {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  #whatToLearn h3 {
+    text-align: start;
+    padding: 20px 20px 20px 0px;
+  }
+
+  #section6 {
+    background-color: #6400e4;
+    height: fit-content;
+    width: 140vw;
+    padding: 50px 0;
+  }
+
+  #section6 img {
+    display: flex;
+  }
+
+  #firstImage {
+    margin-left: 85vw;
+    margin-top: -40px;
+  }
+
+  #secondImage {
+    visibility: hidden;
+  }
+
+  #thirdImage {
+    visibility: hidden;
+  }
+
+  #timeToStart div {
+    margin-top: -200px;
+  }
+
+  #timeToStart p {
+    font-size: 26px;
+    margin: 0 50px;
+  }
+
+  #timeToStart button {
+    width: 350px;
+    height: 70px;
+  }
+
+  /*   */
+
+  footer {
+    width: 140vw;
+  }
+
+  #topFooter {
+    flex-direction: column;
+    width: 120vw;
+  }
+
+  #leftFooter {
+    width: 100%;
+  }
+
+  #leftFooter div {
+    width: 50%;
+    padding: 20px;
+  }
+
+  #betweenFooterParts1 {
+    margin: 30px 0;
+    border-top: 1px solid black;
+  }
+
+  #betweenFooterParts2 {
+    margin: 30px 0;
+    border-top: 1px solid black;
+  }
+
+  #rightFooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+
+  #rightFooterContent {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  #leftContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 20px 20px 0;
+  }
+  #leftContent > div {
+    width: 50%;
+  }
+
+  #leftContent > div:nth-child(2) {
+    padding-left: 50px;
+  }
+
+  #rightContent {
+    width: 100%;
+    padding: 20px 20px 20px 0;
+  }
+
+  #bottomFooter {
+    width: 120vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #bottomFooterLeftSide {
+    display: inline;
+    width: 120vw;
+    text-align: center;
+  }
+
+  #bottomFooterLeftSide p {
+    display: inline;
+    padding-left: 10px;
+    line-height: 25px;
+  }
+
+  #bottomFooterRightSide {
+    display: block;
+    text-align: center;
+    width: 120vw;
+    padding: 15px;
   }
 }
